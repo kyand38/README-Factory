@@ -1,7 +1,10 @@
-
+// TODO: Include packages needed for this application
+import generateMarkdown from './generateMarkdown.js';
 import inquirer from 'inquirer';
+import fs from 'fs';
 // used questions from 'https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide' for my input messages.
-const sections = [
+// TODO: Create an array of questions for user input
+const questions = [
     {
       type: 'input',
       name: 'title',
@@ -30,7 +33,7 @@ const sections = [
     //pulled the same licenses from the dropdown menu on Github
     {
       type: 'list',
-      name: 'License',
+      name: 'license',
       message:'Choose a license for your repository:',
       choices: [
         'none',
@@ -47,7 +50,8 @@ const sections = [
         'GNU Lesser General Public License v2.1',
         'Mozilla Public License 2.0',
         'The Unlicense',
-      ]
+      ],
+      default: 'none',
     },
     {
       type: 'input',
@@ -60,6 +64,13 @@ const sections = [
       message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so.',
     },
 ];
+// TODO: Create a function to write README file
+inquirer.prompt(questions)
+.then( answers) => {
+    const content = produceReadme(answers);
 
+};
+// TODO: Create a function to initialize app
 
 console.log()
+// Function call to initialize app
