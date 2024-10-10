@@ -23,12 +23,12 @@ const questions = [
     {
       type: 'input',
       name: 'usage',
-      message: 'Provide instructions and examples for use.',
+      message: 'Provide instructions and examples for use:',
     },
     {
       type: 'input',
       name: 'credits',
-      message: 'List your collaborators, if any, with links to their GitHub profiles.',
+      message: 'List your collaborators, if any, with links to their GitHub profiles:',
     },
     //pulled the same licenses from the dropdown menu on Github
     {
@@ -50,27 +50,40 @@ const questions = [
         'GNU Lesser General Public License v2.1',
         'Mozilla Public License 2.0',
         'The Unlicense',
-      ],
-      default: 'none',
+     ],
+      default:'none',
     },
     {
       type: 'input',
       name: 'features',
-      message: 'If your project has a lot of features, list them here.',
+      message: 'If your project has a lot of features, list them here:',
     },
     {
       type: 'input',
       name: 'howToContribute',
-      message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so.',
+      message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so:',
     },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Enter a link to your Github:',
 ];
 // TODO: Create a function to write README file
-inquirer.prompt(questions)
-.then( answers) => {
-    const content = produceReadme(answers);
-
-};
+const writeToAFile = (data) => {
+  fs.writeFile(`README.md`, data, (err) =>{
+    err ? console.error(err) : console.info("Written to file.")
+});
+}
 // TODO: Create a function to initialize app
+function init(questions) {
+inquirer.prompt(questions)
+.then((data) => {
+  let markDownString = "";
+  markDownString = generateMarkdown(data);
+  writeToAFile(markDownString);
+})
+.catch(console.error);
+}
 
-console.log()
 // Function call to initialize app
+init(questions);
