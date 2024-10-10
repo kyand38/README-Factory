@@ -44,7 +44,7 @@ const questions = [
         'BSd 3-Clause "New" or "Revised License"',
         'Boost Software License 1.0',
         'Creative Commons Zero v1.0 Universal',
-        'Eclipse Public License 2.0',
+        'Eclipse Public License 1.0',
         'GNU Affero General Public License v3.0',
         'GNU General Public License v2.0',
         'GNU Lesser General Public License v2.1',
@@ -60,14 +60,9 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'howToContribute',
-      message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so:',
-    },
-    {
-      type: 'input',
       name: 'github',
       message: 'Enter a link to your Github:',
-];
+}];
 // TODO: Create a function to write README file
 const writeToAFile = (data) => {
   fs.writeFile(`README.md`, data, (err) =>{
