@@ -71,7 +71,7 @@ const questions = [
 ];
 // TODO: Create a function to write README file
 const writeToAFile = (data) => {
-  fs.writeFile(`./dist/README.md`, data, (err) =>{
+  fs.writeFile(`DEMO.md`, data, (err) =>{
     err ? console.error(err) : console.info("Written to file.")
 });
 }
