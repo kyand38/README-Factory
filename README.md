@@ -25,6 +25,7 @@ To get started, clone this repository and install the dependencies:
  -  Answer a series of prompts (e.g., project name, description, installation steps).
  -  The app generates a `README.md` file based on your inputs.
  -  Link to short walkthrough.[Demo](https://watch.screencastify.com/v/0KzV9MXGidGKyuRL54x9)
+ -  Once you've run the program your README.md file will be in your ./dist folder.
 
 ## License:
 This application is covered under the following license: [MIT License](https://www.gnu.org/licenses/gpl-3.0)
