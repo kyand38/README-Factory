@@ -24,10 +24,7 @@ To get started, clone this repository and install the dependencies:
  -  Run the app in your terminal using node index.js
  -  Answer a series of prompts (e.g., project name, description, installation steps).
  -  The app generates a `README.md` file based on your inputs.
-
-## Credits:
-
-
+ -  Link to short walkthrough. (https://drive.google.com/file/d/1KORKQMZQYXSnaPbYMj7W-5fRy8tT_zlb/view)
 
 ## License:
 This application is covered under the following license: [MIT License](https://www.gnu.org/licenses/gpl-3.0)
