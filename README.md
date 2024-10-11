@@ -2,7 +2,7 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  ## Description
- README-Factory is a Node.js application that helps you quickly generate a well-structured `README.md` file for your projects. Simply provide the necessary details through the terminal, and the app will generate the file for you automatically. It’s perfect for developers who want to save time and ensure their projects have consistent, professional documentation.
+ README-Factory is a Node.js application that helps you quickly generate a well-structured `README.md` file for your projects using your command-line interface. Simply provide the necessary details through the terminal, and the app will generate the file for you automatically. It’s perfect for developers who want to save time and ensure their projects have consistent, professional documentation.
  
  ## Table of Contents:
 
