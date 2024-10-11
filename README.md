@@ -21,7 +21,7 @@ To get started, clone this repository and install the dependencies:
 4.  npm install
 
 ## Usage:
- -  Run the app in your terminal.
+ -  Run the app in your terminal using node index.js
  -  Answer a series of prompts (e.g., project name, description, installation steps).
  -  The app generates a `README.md` file based on your inputs.
 
@@ -39,6 +39,7 @@ This application is covered under the following license: [MIT License](https://w
 - Saves time by eliminating repetitive writing
 
 
-## My Github
+## Questions
 https://github.com/kyand38
+kyand2024@gmail.com
 

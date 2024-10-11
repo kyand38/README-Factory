@@ -135,12 +135,58 @@ function renderLicenseSection(license) {
     case 'GNU General Public License v3.0':
       licenseSection = licenseCopy + renderLicenseLink(license);
       break;
+
+    case 'MIT License':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'BSD 2-Clause "Simplified" License':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'BSd 3-Clause "New" or "Revised License':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'Boost Software License 1.0':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'Creative Commons Zero v1.0 Universal':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'Eclipse Public License 1.0':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'GNU Affero General Public License v3.0':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'GNU General Public License v2.0':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'GNU Lesser General Public License v2.1':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'Mozilla Public License 2.0':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
+    case 'The Unlicense':
+      licenseSection = licenseCopy + renderLicenseLink(license);
+      break;
+
     default:
       licenseSection = "";  
 
     }
     return licenseSection;
 }
+
 //Avery helped me with the Table of contents
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -157,7 +203,7 @@ function generateMarkdown(data) {
  -[Credits](#credits)<br/>
  -[License](#license)<br/>
  -[Features](#features)<br/>
- -[Github](#github)<br/>
+ -[Questions](#questions)<br/>
 
 ## Installation: 
 ${data.installation}
@@ -170,13 +216,14 @@ ${data.credits}
 
 
 ## License:
-${renderLicenseSection(data.license)}<br/>
+${renderLicenseSection(data.license)}
 
 ## Features
 ${data.features}
 
-## My Github
+## Questions
 ${data.github}
+${data.email}
 
 `};
 
