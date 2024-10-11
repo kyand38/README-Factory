@@ -222,8 +222,8 @@ ${renderLicenseSection(data.license)}
 ${data.features}
 
 ## Questions
-${data.github}
-${data.email}
+ - ${data.github}
+ - ${data.email}
 
 `};
 

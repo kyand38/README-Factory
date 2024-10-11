@@ -6,12 +6,12 @@
  
  ## Table of Contents:
 
- -[Installation](#installation)<br/>
- -[Usage](#usage)<br/>
- -[Credits](#credits)<br/>
- -[License](#license)<br/>
- -[Features](#features)<br/>
- -[My Github](#github)<br/>
+ - [Installation](#installation)<br/>
+ - [Usage](#usage)<br/>
+ - [Credits](#credits)<br/>
+ - [License](#license)<br/>
+ - [Features](#features)<br/>
+ - [My Github](#github)<br/>
 
 ## Installation: 
 To get started, clone this repository and install the dependencies:  
@@ -40,6 +40,6 @@ This application is covered under the following license: [MIT License](https://w
 
 
 ## Questions
-https://github.com/kyand38
-kyand2024@gmail.com
+ - https://github.com/kyand38  
+ - kyand2024@gmail.com
 
