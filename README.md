@@ -24,7 +24,7 @@ To get started, clone this repository and install the dependencies:
  -  Run the app in your terminal using node index.js
  -  Answer a series of prompts (e.g., project name, description, installation steps).
  -  The app generates a `README.md` file based on your inputs.
- -  Link to short walkthrough. [Demo](https://watch.screencastify.com/v/0KzV9MXGidGKyuRL54x9)
+ -  Link to short walkthrough. [Demo](https://drive.google.com/file/d/1ucGPrY1MG42VLOuGEFCuI3j67o0JlL-M/view?usp=sharing)
  -  Once you've run the program your DEMO.md file will be made. Rename to README.md once you're happy with it.
 
 ## License:
